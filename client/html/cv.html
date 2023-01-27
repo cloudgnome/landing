@@ -1,0 +1,220 @@
+{% load static %}
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% trans "Ivan Petrovich"%}</title>
+    <link rel="stylesheet" href="{% static 'css/cv.css'%}">
+</head>
+<body>
+<div id="cv">
+    <div id="head">
+        {%include 'language.html'%}
+        <div id="avatar">
+            {% include 'avatar1.svg'%}
+        </div>
+        <div>
+            <div id="name">
+                <h1 id="full-name">
+                    <span>{% trans 'Іван'%}</span><span>{% trans 'Петрович'%}</span><span>{% trans 'Базарний'%}</span>
+                </h1>
+                <h3>Full-stack developer HTML, CSS, JS(Vanilla), Python 5+ years exprerience. Android Junior, Rust Junior.</h3>
+            </div>
+            <div id="contacts">
+                <div>
+                    <div>
+                        <div class="image">
+                           {% include "header-envelop.svg" %}
+                        </div>
+                        <span>
+                            <a href="mailto:ivan.petrov.digital@gmail.com">{% trans "ivan.petrov.digital@gmail.com"%}</a>
+                        </span>
+                    </div>
+                    <div>
+                        <div class="image">
+                           {% include "header-phone.svg" %}
+                        </div>
+                        <span>{% trans "0629102731"%}</span>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <div class="image">
+                           {% include "header-location.svg" %}
+                        </div>
+                        <span>{% trans "Vliegenwaard 1,6917 AB Gerderland"%}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="main">
+        <div id="info">
+            <div class="block info">
+                <div class="title">{% trans 'Освіта'%}</div>
+                <div class="info-wrapper">
+                    <div class="info-head">
+                        <h2>{% trans "Програмування комп'ютерів та автоматизованих систем"%}</h2>
+                        <div class="time">{% trans 'вер 2006 - чер 2009'%}</div>
+                    </div>
+                    <h3>{% trans "ХРТТ, Харків"%}</h3>
+                    <div>{% trans "Диплом молодшого спеціаліста"%}</div>
+                </div>
+                <div class="info-wrapper">
+                    <div class="info-head">
+                        <h2>{% trans "Комп'ютерні системи та мережі"%}</h2>
+                        <div class="time">{% trans "вер 2009 - чер 2012"%}</div>
+                    </div>
+                    <h3>{% trans "ХПІ, Харків"%}</h3>
+                    <div>{% trans "Диплом бакалавра"%}</div>
+                </div>
+            </div>
+            <div class="block info">
+                <div class="title">{% trans "Досвід роботи"%}</div>
+                <div class="info-wrapper">
+                    <h2>{% trans "Повний-стек розробник."%}</h2>
+                    <div class="info-head">
+                        <h3>{% trans "Фріланс та невеликі проекти."%}</h3>
+                        <div class="time">{% trans "кві 2010 - лют 2015"%}</div>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>{% trans "Працював за багатьма сайтами та людьми, використовував PHP та Python."%}</li>
+                            <li>{% trans "Системний адміністратор."%}</li>
+                            <li>{% trans "Монтажник кабелів та інженер в будові локальної мережі та під'єднання до глобального інтернету."%}</li>
+                            <li>{% trans "HTML, CSS, JS specialist, Python and PHP backend"%}</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="info-wrapper">
+                    <h2>{% trans "Повний-стек розробник Python та Django. HTML CSS JS спеціаліст."%}</h2>
+                    <div class="image">
+                        <img src="{% static 'image/barabashovo.jpg'%}" alt='{% trans "Barabashovo, Kharkiv"%}'>
+                    </div>
+                    <div class="info-head">
+                        <h3>{% trans "Барабашово(Харків) це один з найбільших ринків східній Україні та 14й за величиною маркет в світі. Це місце де ви можете придбати товари зроблені у: ЄС, Україні, Китаї, Індонезії, Турції, В'єтнамі, Азії та інших."%}</h3>
+                        <div class="time">{% trans "лют 2015 - лист 2021"%}</div>
+                    </div>
+                    <div class="">
+                      <ul>
+                        <h4>{% trans "Моя робота була пов'язана зі складами та торгівлею, тому я:"%}</h4>
+                        <li>{% trans "аналізував бізнес та маркетинг"%}</li>
+                        <li>{% trans "створював дизайн та Бази Даних використовуючи MySQL"%}</li>
+                        <li>{% trans "web сервер NGINX та Apache."%}</li>
+                        <li>{% trans "Python Django для створення e-commerce онлайн магазинів marketplace"%}</li>
+                        <li>{% trans "створював асинхронні синхронізації валюти,скидок,цін та наявність поміж різними системами, використовуючи: Celery, http та ssh протоколи."%}</li>
+                        <li>{% trans "власна CMS адмін панель для менеджменту магазину: замовлення, товари та контент сайту"%}</li>
+                        <li>{% trans "SEO-оптимізація. Тестування у Google та пошуковій системі, тести сервісами Google."%}</li>
+                        <li>{% trans "створював користувальницькі та тестові сервера, Debian та Centos Linux"%}</li>
+                        <li>{% trans "крос-браузерні мобільний адаптивний дизайн"%}</li>
+                      </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <h4>{% trans "Разом"%}:</h4>
+                            <li>{% trans "e-commerce з нуля, SEO-оптимізація, 100/100 результат тестів продуктивності.Python, Django, MySQL, HTML, CSS, vanilla JavaScript(ECMAScript)."%}</li>
+                            <li>{% trans "Бек-енд, REST API та не REST API для мобільних додатків, вебсайтів та інших систем."%}</li>
+                            <li>{% trans "UI/UX мобільний дружелюбний інтерфейс, розробка власного дизайну з нуля, кросбраузерність, та легкі до взаємодії версії."%}</li>
+                            <li>{% trans "Web хостінг, створення, встановлення фізичного та программного серверу для задоволення потреб користувача."%}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="add-info">
+            <div class="title">{% trans "Персональна інфо:"%}</div>
+            <div class="block info">
+                <div>
+                    <div class="head">{% trans "Дата народження"%}</div>
+                    <div>{% trans "27 лютого 1990"%}</div>
+                </div>
+                <div>
+                    <div class="head">{% trans "Місце народження"%}</div>
+                    <div>{% trans "Харків"%}</div>
+                </div>
+                <div>
+                    <div class="head">{% trans "Водійські права"%}</div>
+                    <div>{% trans "B, з автомобілем, більше 10 років досвіду водіння"%}</div>
+                </div>
+                <div>
+                    <div class="head">{% trans "Національність"%}</div>
+                    <div>{% trans "Українець"%}</div>
+                </div>
+                <div>
+                    <div class="head">{% trans "Сімейний стан"%}</div>
+                    <div>{% trans "Одружений, дитина 4 роки"%}</div>
+                </div>
+            </div>
+            <div class="title">{% trans "Навички"%}</div>
+            <div class="block graphic">
+                <div>
+                    <div class="head">Python</div>
+                    <div class="line 100"></div>
+                </div>
+                <div>
+                    <div class="head">HTML</div>
+                    <div class="line 100"></div>
+                </div>
+                <div>
+                    <div class="head">CSS</div>
+                    <div class="line 100"></div>
+                </div>
+                <div>
+                    <div class="head">JavaScript(ECMAScript)</div>
+                    <div class="line 100"></div>
+                </div>
+                <div>
+                    <div class="head">Django</div>
+                    <div class="line 100"></div>
+                </div>
+                <div>
+                    <div class="head">Linux</div>
+                    <div class="line 70"></div>
+                    <div class="line 30"></div>
+                </div>
+                <div>
+                    <div class="head">Rust</div>
+                    <div class="line 30"></div>
+                    <div class="line 70"></div>
+                </div>
+                <div>
+                    <div class="head">Kotlin</div>
+                    <div class="line 60"></div>
+                    <div class="line 40"></div>
+                </div>
+                <div>
+                    <div class="head">Android Compose</div>
+                    <div class="line 70"></div>
+                    <div class="line 30"></div>
+                </div>
+            </div>
+            <div class="title">{% trans "Мови"%}</div>
+            <div class="block graphic">
+                <div>
+                    <div class="head">English</div>
+                    <div class="line 60"></div>
+                    <div class="line 40"></div>
+                </div>
+                <div>
+                    <div class="head">Українська</div>
+                    <div class="line 100"></div>
+                </div>
+                <div>
+                    <div class="head">Dutch</div>
+                    <div class="line 20"></div>
+                    <div class="line 80"></div>
+                </div>
+            </div>
+            <div class="title">{% trans "Хобі"%}</div>
+            <div class="block info">
+                <div>
+                    {% trans "Інженерія, музика, басгітара, автомобілі, гараж."%}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

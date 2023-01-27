@@ -1,0 +1,390 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-01-19 17:53+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: html/cv.html:8
+msgid "Ivan Petrovich"
+msgstr ""
+
+#: html/cv.html:23
+msgid "Іван"
+msgstr "Ivan"
+
+#: html/cv.html:23
+msgid "Петрович"
+msgstr "Petrovitsj"
+
+#: html/cv.html:23
+msgid "Базарний"
+msgstr "Bazarnyi"
+
+#: html/cv.html:32
+msgid "ivan.petrov.digital@gmail.com"
+msgstr ""
+
+#: html/cv.html:39
+msgid "0629102731"
+msgstr ""
+
+#: html/cv.html:47
+msgid "Vliegenwaard 1,6917 AB Gerderland"
+msgstr ""
+
+#: html/cv.html:56
+msgid "Освіта"
+msgstr "Opleidingen"
+
+#: html/cv.html:59
+msgid "Програмування комп'ютерів та автоматизованих систем"
+msgstr "Programmeren van computers en geautomatiseerde systemen"
+
+#: html/cv.html:60
+msgid "вер 2006 - чер 2009"
+msgstr "sep 2006 - jun 2009"
+
+#: html/cv.html:62
+msgid "ХРТТ, Харків"
+msgstr "KHRTT, Kharkiv"
+
+#: html/cv.html:63
+msgid "Диплом молодшого спеціаліста"
+msgstr "Diploma junior specialist"
+
+#: html/cv.html:67
+msgid "Комп'ютерні системи та мережі"
+msgstr "Computersystemanen netwerken"
+
+#: html/cv.html:68
+msgid "вер 2009 - чер 2012"
+msgstr "sep 2009 - jun 2012"
+
+#: html/cv.html:70
+msgid "ХПІ, Харків"
+msgstr "KHPI, Kharkiv"
+
+#: html/cv.html:71
+msgid "Диплом бакалавра"
+msgstr "Bachelor diploma"
+
+#: html/cv.html:75
+msgid "Досвід роботи"
+msgstr "Werkevaring"
+
+#: html/cv.html:77
+msgid "Повний-стек розробник."
+msgstr "Freelance en kleine projecten."
+
+#: html/cv.html:79
+msgid "Фріланс та невеликі проекти."
+msgstr "Full-stack ontwikkelaar."
+
+#: html/cv.html:80
+msgid "кві 2010 - лют 2015"
+msgstr "apr 2010 - feb 2015"
+
+#: html/cv.html:84
+msgid "Працював за багатьма сайтами та людьми, використовував PHP та Python."
+msgstr "Werkte voor veel sites en mensen, gebruikte PHP en Python."
+
+#: html/cv.html:85
+msgid "Системний адміністратор."
+msgstr "Systeem administrator."
+
+#: html/cv.html:86
+msgid ""
+"Монтажник кабелів та інженер в будові локальної мережі та під'єднання до "
+"глобального інтернету."
+msgstr ""
+"Kabelinstallateur en engineer bij de aanleg van een lokaal netwerk en "
+"aansluiting op het wereldwijde internet."
+
+#: html/cv.html:87
+msgid "HTML, CSS, JS specialist, Python and PHP backend"
+msgstr ""
+
+#: html/cv.html:92
+msgid "Повний-стек розробник Python та Django. HTML CSS JS спеціаліст."
+msgstr "Full-stack Python en Django ontwikkelaar. HTML CSS JS-specialist."
+
+#: html/cv.html:94
+msgid "Barabashovo, Kharkiv"
+msgstr ""
+
+#: html/cv.html:97
+msgid ""
+"Барабашово(Харків) це один з найбільших ринків східній Україні та 14й за "
+"величиною маркет в світі. Це місце де ви можете придбати товари зроблені у: "
+"ЄС, Україні, Китаї, Індонезії, Турції, В'єтнамі, Азії та інших."
+msgstr "Barabashovo (Kharkiv) is de grootste markt van Oost-Oekraïne en is de 14e grootste markt ter wereld. De plek waar je kunt kopen wat je wilt, geproduceerd in: EU, Oekraïne, China, Indonesië, Turkije, Vietnam, Azië en vele andere landen"
+
+#: html/cv.html:98
+msgid "лют 2015 - лист 2021"
+msgstr "feb 2015 - nov 2021"
+
+#: html/cv.html:102
+msgid "Моя робота була пов'язана зі складами та торгівлею, тому я:"
+msgstr "Mijn werk had te maken met magazijnen en handel, dus ik:"
+
+#: html/cv.html:103
+msgid "аналізував бізнес та маркетинг"
+msgstr "business en marketing geanalyseerd"
+
+#: html/cv.html:104
+msgid "створював дизайн та Бази Даних використовуючи MySQL"
+msgstr "ontwerp en databases gemaakt met behulp van MySQL"
+
+#: html/cv.html:105
+msgid "web сервер NGINX та Apache."
+msgstr "NGINX en Apache-webserver."
+
+#: html/cv.html:106
+msgid "Python Django для створення e-commerce онлайн магазинів marketplace"
+msgstr "Python Django voor het creëren van e-commerce online marktplaatsen"
+
+#: html/cv.html:107
+msgid ""
+"створював асинхронні синхронізації валюти,скидок,цін та наявність поміж "
+"різними системами, використовуючи: Celery, http та ssh протоколи."
+msgstr ""
+"creëerde asynchrone synchronisatie van valuta, kortingen, prijzen en "
+"beschikbaarheid tussen verschillende systemen met behulp van: Celery, http "
+"en ssh-protocollen."
+
+#: html/cv.html:108
+msgid ""
+"власна CMS адмін панель для менеджменту магазину: замовлення, товари та "
+"контент сайту"
+msgstr ""
+"eigen CMS-beheerpaneel voor winkelbeheer: bestellingen, producten en site-"
+"inhoud"
+
+#: html/cv.html:109
+msgid ""
+"SEO-оптимізація. Тестування у Google та пошуковій системі, тести сервісами "
+"Google."
+msgstr ""
+"SEO-optimalisatie. Testen in Google en de zoekmachine, testen door Google-"
+"services."
+
+#: html/cv.html:110
+msgid "створював користувальницькі та тестові сервера, Debian та Centos Linux"
+msgstr "bouwde custom en testservers, Debian en Centos Linux"
+
+#: html/cv.html:111
+msgid "крос-браузерні мобільний адаптивний дизайн"
+msgstr "mobiel responsief ontwerp voor meerdere browsers"
+
+#: html/cv.html:116
+msgid "Разом"
+msgstr "Samen"
+
+#: html/cv.html:117
+msgid ""
+"e-commerce з нуля, SEO-оптимізація, 100/100 результат тестів продуктивності."
+"Python, Django, MySQL, HTML, CSS, vanilla JavaScript(ECMAScript)."
+msgstr ""
+
+#: html/cv.html:118
+msgid ""
+"Бек-енд, REST API та не REST API для мобільних додатків, вебсайтів та інших "
+"систем."
+msgstr ""
+"Back-end, REST API en non-REST API voor mobiele applicaties, websites en "
+"andere systemen."
+
+#: html/cv.html:119
+msgid ""
+"UI/UX мобільний дружелюбний інтерфейс, розробка власного дизайну з нуля, "
+"кросбраузерність, та легкі до взаємодії версії."
+msgstr ""
+"UI/UX mobielvriendelijke interface, ontwikkeling van een eigen ontwerp vanaf "
+"nul, compatibiliteit tussen verschillende browsers en gemakkelijk te "
+"gebruiken versies."
+
+#: html/cv.html:120
+msgid ""
+"Web хостінг, створення, встановлення фізичного та программного серверу для "
+"задоволення потреб користувача."
+msgstr ""
+"Webhosting, creatie, installatie van een fysieke en softwareserver om aan de "
+"behoeften van de gebruiker te voldoen."
+
+#: html/cv.html:127
+msgid "Персональна інфо:"
+msgstr "Personalia"
+
+#: html/cv.html:130
+msgid "Дата народження"
+msgstr "Geboortedatum"
+
+#: html/cv.html:131
+msgid "27 лютого 1990"
+msgstr "27 febrauri 1990"
+
+#: html/cv.html:134
+msgid "Місце народження"
+msgstr "Geboorteplaats"
+
+#: html/cv.html:135
+msgid "Харків"
+msgstr "Charkov"
+
+#: html/cv.html:138
+msgid "Водійські права"
+msgstr "Rijbewijs"
+
+#: html/cv.html:139
+msgid "B, з автомобілем, більше 10 років досвіду водіння"
+msgstr "B, met een auto, meer dan 10 jaar rijervaring"
+
+#: html/cv.html:142
+msgid "Національність"
+msgstr "Nationaliteit"
+
+#: html/cv.html:143
+msgid "Українець"
+msgstr "Oekraïens"
+
+#: html/cv.html:146
+msgid "Сімейний стан"
+msgstr "Burgerlijke staat"
+
+#: html/cv.html:147
+msgid "Одружений, дитина 4 роки"
+msgstr "Getrouwd, kind 4 jaar oud"
+
+#: html/cv.html:150
+msgid "Навички"
+msgstr "Vaardigheden"
+
+#: html/cv.html:193
+msgid "Мови"
+msgstr "Talen"
+
+#: html/cv.html:210
+msgid "Хоббі"
+msgstr "Hobby's"
+
+#: html/cv.html:213
+msgid "Інженерія, музика, басгітара, автомобілі, гараж."
+msgstr "Engineering, muziek, basgitaar, auto's, garage."
+
+#: html/index.html:17
+msgid "Я вірю в дива, я вірю в тебе."
+msgstr ""
+
+#: html/index.html:36
+msgid "Ти на цьому сайті, тому що"
+msgstr ""
+
+#: html/index.html:39
+msgid "Тобі потрібно сконструювати #Django додаток, або #website"
+msgstr ""
+
+#: html/index.html:40
+msgid "Потрібен #Python додаток або програма"
+msgstr ""
+
+#: html/index.html:41
+msgid "#HTML #CSS #JS front-end"
+msgstr ""
+
+#: html/index.html:42
+msgid "SEO-оптимізація та покращення роботи вашого сайту."
+msgstr ""
+
+#: html/index.html:43
+msgid " Зворотній зв'язок "
+msgstr ""
+
+#: html/index.html:47
+msgid "Розробка сайтів, додатків та мікросервісів різної складності"
+msgstr ""
+
+#: html/index.html:54
+msgid "AppStore IOS application"
+msgstr ""
+
+#: html/index.html:62
+msgid "Managers panel to work with orders and customers"
+msgstr ""
+
+#: html/index.html:70
+msgid "Charts and statistics"
+msgstr ""
+
+#: html/index.html:78
+msgid "Mobile-friendly product view"
+msgstr ""
+
+#: html/index.html:86
+msgid "Customable REST admin-panel"
+msgstr ""
+
+#: html/index.html:94
+msgid "CMS-system"
+msgstr ""
+
+#: html/index.html:102
+msgid "Social network"
+msgstr ""
+
+#: html/index.html:110
+msgid "Landing page"
+msgstr ""
+
+#: html/index.html:117
+msgid "Чому"
+msgstr ""
+
+#: html/index.html:122
+msgid ""
+"Швидка та розвиваюча мова програмування, з читабельним синтаксисом\n"
+"                    та розкритим Об'єктно Орієнтованним Програмуванням."
+msgstr ""
+
+#: html/index.html:132
+msgid ""
+"#HTML,#CSS,#JS мови програмування інтерфейсу та досвіду користувача.\n"
+"                    Новітня технологія #WASM #RUST анонсовано проживе "
+"наступні 40 років розвитку комп'ютерних технологій"
+msgstr ""
+
+#: html/index.html:142
+msgid ""
+"Наступний крок в еволюції баз даних. Зберігайте свої данні, гроші "
+"максимально безпечно.\n"
+"                    Web3.0 який реалізує незалежні та прозорі данні."
+msgstr ""
+
+#: html/index.html:152
+msgid "Релевантна інформація в пошукових мережах для вашого бізнесу"
+msgstr ""
+
+#~ msgid "Самоосвіта"
+#~ msgstr "Zelfstudie"
+
+#~ msgid "вер 2010 - нині"
+#~ msgstr "sep 2010 - heden"
+
+#~ msgid "Україна, Харків"
+#~ msgstr "Oekraïne Charkov"
+
+#~ msgid "Книги, відео, статі в інтернеті"
+#~ msgstr "Books, videos, artikelen op internet"

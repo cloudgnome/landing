@@ -1,0 +1,15 @@
+{% load static %}
+<div id="language">
+    <div class="link active">
+        <a href="?lang={{language}}">
+            <img src="/static/image/lang/{{language}}.jpg">
+        </a>
+    </div>
+    {%for language in languages%}
+        <div class="link {{active}}">
+            <a href="?lang={{language.code}}">
+                <img src="/static/image/lang/{{language.code}}.jpg">
+            </a>
+        </div>
+    {%endfor%}
+</div>
