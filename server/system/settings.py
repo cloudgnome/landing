@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 
 from pathlib import Path
-import sys
+import os,sys
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -82,15 +82,29 @@ WSGI_APPLICATION = 'system.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'miracles_db',
-        'USER': 'miracles',
-        'PASSWORD': 'a9O*757#82SO',
-        'HOST':'localhost'
+if 'RDS_HOSTNAME' in os.environ:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.mysql',
+            'NAME': os.environ['RDS_DB_NAME'],
+            'USER': os.environ['RDS_USERNAME'],
+            'PASSWORD': os.environ['RDS_PASSWORD'],
+            'HOST': os.environ['RDS_HOSTNAME'],
+            'PORT': os.environ['RDS_PORT'],
+        }
     }
-}
+
+else:
+
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.mysql',
+            'NAME': 'miracles_db',
+            'USER': 'miracles',
+            'PASSWORD': 'a9O*757#82SO',
+            'HOST':'localhost'
+        }
+    }
 
 
 # Password validation
@@ -148,6 +162,8 @@ EMAIL_HOST_PASSWORD = 'Портал'
 EMAIL_PORT = 25
 
 LANGUAGES = (
+    ('uk-UA', 'Українська'),
+    ('uk', 'Українська'),
     ('ua', 'Українська'),
     ('en', 'English'),
     ('nl', 'Dutch'),
