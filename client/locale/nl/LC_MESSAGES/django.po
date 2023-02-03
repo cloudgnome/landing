@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-19 17:53+0100\n"
+"POT-Creation-Date: 2023-02-02 15:55+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,15 +22,15 @@ msgstr ""
 msgid "Ivan Petrovich"
 msgstr ""
 
-#: html/cv.html:23
+#: html/cv.html:21
 msgid "Іван"
 msgstr "Ivan"
 
-#: html/cv.html:23
+#: html/cv.html:21
 msgid "Петрович"
 msgstr "Petrovitsj"
 
-#: html/cv.html:23
+#: html/cv.html:21
 msgid "Базарний"
 msgstr "Bazarnyi"
 
@@ -131,7 +131,11 @@ msgid ""
 "Барабашово(Харків) це один з найбільших ринків східній Україні та 14й за "
 "величиною маркет в світі. Це місце де ви можете придбати товари зроблені у: "
 "ЄС, Україні, Китаї, Індонезії, Турції, В'єтнамі, Азії та інших."
-msgstr "Barabashovo (Kharkiv) is de grootste markt van Oost-Oekraïne en is de 14e grootste markt ter wereld. De plek waar je kunt kopen wat je wilt, geproduceerd in: EU, Oekraïne, China, Indonesië, Turkije, Vietnam, Azië en vele andere landen"
+msgstr ""
+"Barabashovo (Kharkiv) is de grootste markt van Oost-Oekraïne en is de 14e "
+"grootste markt ter wereld. De plek waar je kunt kopen wat je wilt, "
+"geproduceerd in: EU, Oekraïne, China, Indonesië, Turkije, Vietnam, Azië en "
+"vele andere landen"
 
 #: html/cv.html:98
 msgid "лют 2015 - лист 2021"
@@ -278,8 +282,8 @@ msgid "Мови"
 msgstr "Talen"
 
 #: html/cv.html:210
-msgid "Хоббі"
-msgstr "Hobby's"
+msgid "Хобі"
+msgstr ""
 
 #: html/cv.html:213
 msgid "Інженерія, музика, басгітара, автомобілі, гараж."
@@ -287,19 +291,19 @@ msgstr "Engineering, muziek, basgitaar, auto's, garage."
 
 #: html/index.html:17
 msgid "Я вірю в дива, я вірю в тебе."
-msgstr ""
+msgstr "Ik geloof in wonderen, ik geloof in jou."
 
 #: html/index.html:36
 msgid "Ти на цьому сайті, тому що"
-msgstr ""
+msgstr "Je bent op deze site omdat"
 
 #: html/index.html:39
 msgid "Тобі потрібно сконструювати #Django додаток, або #website"
-msgstr ""
+msgstr "Je moet een #Django applicatie of #website bouwen"
 
 #: html/index.html:40
 msgid "Потрібен #Python додаток або програма"
-msgstr ""
+msgstr "Heb een #Python-app of -programma nodig"
 
 #: html/index.html:41
 msgid "#HTML #CSS #JS front-end"
@@ -307,23 +311,27 @@ msgstr ""
 
 #: html/index.html:42
 msgid "SEO-оптимізація та покращення роботи вашого сайту."
-msgstr ""
+msgstr "SEO optimalisatie en verbetering van uw website."
 
 #: html/index.html:43
 msgid " Зворотній зв'язок "
-msgstr ""
+msgstr " Neem contact op "
 
 #: html/index.html:47
 msgid "Розробка сайтів, додатків та мікросервісів різної складності"
 msgstr ""
+"Ontwikkeling van sites, applicaties en microservices van verschillende "
+"complexiteit"
 
 #: html/index.html:54
-msgid "AppStore IOS application"
-msgstr ""
+#, fuzzy
+#| msgid "AppStore IOS application"
+msgid "Android Kotlin application"
+msgstr "Appstore IOS-applicatie"
 
 #: html/index.html:62
 msgid "Managers panel to work with orders and customers"
-msgstr ""
+msgstr "Managerspaneel om met bestellingen en klanten te werken"
 
 #: html/index.html:70
 msgid "Charts and statistics"
@@ -351,13 +359,15 @@ msgstr ""
 
 #: html/index.html:117
 msgid "Чому"
-msgstr ""
+msgstr "Waarom"
 
 #: html/index.html:122
 msgid ""
 "Швидка та розвиваюча мова програмування, з читабельним синтаксисом\n"
 "                    та розкритим Об'єктно Орієнтованним Програмуванням."
 msgstr ""
+"Snelle en ontwikkelende programmeertaal, met leesbare syntaxis en Open "
+"Object Georiënteerd Programmeren"
 
 #: html/index.html:132
 msgid ""
@@ -366,25 +376,39 @@ msgid ""
 "наступні 40 років розвитку комп'ютерних технологій"
 msgstr ""
 
+# HTML,#CSS,#JS programmeertalen voor interface en gebruikerservaring. Nieuwste #WASM #RUST-technologie aangekondigd om te leven de komende 40 jaar van ontwikkeling van computertechnologieën"
 #: html/index.html:142
 msgid ""
 "Наступний крок в еволюції баз даних. Зберігайте свої данні, гроші "
 "максимально безпечно.\n"
 "                    Web3.0 який реалізує незалежні та прозорі данні."
 msgstr ""
+"De volgende stap in de evolutie van databases. Houd uw gegevens en geld zo "
+"veilig mogelijk. Web3.0, dat onafhankelijke en transparante data "
+"implementeert."
 
 #: html/index.html:152
 msgid "Релевантна інформація в пошукових мережах для вашого бізнесу"
-msgstr ""
+msgstr "Relevante zoekmachine-informatie voor uw bedrijf"
 
-#~ msgid "Самоосвіта"
-#~ msgstr "Zelfstudie"
+#: html/index.html:163
+msgid ""
+"«Негідно хорошим людям витрачати години, як раби, у праці розрахунків, яку "
+"можна було б покласти на когось іншого, якби використовувалися машини. <br> "
+"<br> (Описуючи в 1685 році цінність ручної обчислювальної машини для "
+"астрономів, яку він винайшов у 1673 році.)»"
+msgstr "“Het is uitstekende mannen onwaardig om als slaven uren te verliezen aan rekenwerk dat veilig aan iemand anders zou kunnen worden overgelaten als er machines werden gebruikt.<br><br>(Beschrijft in 1685 de waarde voor astronomen van de handbediende rekenmachine die hij in 1673 had uitgevonden.)”"
 
-#~ msgid "вер 2010 - нині"
-#~ msgstr "sep 2010 - heden"
+#: html/index.html:165
+msgid "Готфрід Лейбніц"
+msgstr "Gottfried Leibniz"
 
-#~ msgid "Україна, Харків"
-#~ msgstr "Oekraïne Charkov"
+#: html/index.html:170
+msgid ""
+"„Якщо двері сприйняття очистити, усе постане перед людиною яким воно є - "
+"безмірним.“"
+msgstr "Als de deuren van waarneming waren gereinigd, zou alles voor de mens verschijnen zoals het is, oneindig."
 
-#~ msgid "Книги, відео, статі в інтернеті"
-#~ msgstr "Books, videos, artikelen op internet"
+#: html/index.html:172
+msgid "Віліам Блейк"
+msgstr "Willem Blake"

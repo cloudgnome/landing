@@ -40,9 +40,25 @@ button
 button:hover
   background-color: #c11705
 
+.container
+  scroll-behavior: smooth
+  scroll-snap-type: y mandatory
+  overflow-y: scroll
+  height: 100vh
+
+.content
+  margin: auto
+  width: 100%
+  padding: 0 3%
+
+.scroll-box
+  height: 100vh
+  scroll-snap-align: start
+  display: flex
+  flex-wrap: wrap
+
 #header
   background: linear-gradient(90deg,#2b7e9c,#3a90a2,#2e819b)
-  height: 440px
   display: flex
   position: relative
   color: #fff
@@ -110,9 +126,7 @@ h2
 #main
   text-align: center
   font-family: Unbounded
-  padding-top: 69px
   position: relative
-  padding-bottom: 74px
 
 #info
   width: 50%
@@ -208,14 +222,14 @@ h2
 #second 
   position: relative
   z-index: 1
-  display: flex
   font-family: Unbounded
+  display: grid
+  grid-template-columns: 1fr 1fr 1fr 1fr
 
   .block 
     text-align: center
-    padding: 20px 55px 97px
+    padding: 0px 55px
     color: #fff
-    width: 25%
 
     .text
       padding-top: 28px
@@ -224,7 +238,7 @@ h2
 
 #third
   font-family: Unbounded
-  padding-top: 106px
+  padding-top: 26px
   background-color: #465157
   position: relative
   z-index: 1
@@ -232,6 +246,7 @@ h2
 #third h2
   color: #fff
   word-spacing: 4px
+  padding-left: 52px
 
 
 .block.\31 
@@ -248,12 +263,12 @@ h2
     background-color: #c44444
 
 #demo 
-  display: flex
-  flex-wrap: wrap
-  padding: 52px
+  padding: 12px 52px 59px
   grid-column-gap: 48px
-  grid-row-gap: 93px
-  padding-bottom: 149px
+  grid-row-gap: 97px
+  display: grid
+  grid-template-columns: 1fr 1fr 1fr 1fr
+  grid-auto-rows: 165px
 
   .name 
     padding-top: 29px
@@ -261,11 +276,8 @@ h2
     color: #fff
     font-size: 13px
 
-  .block 
-    width: 22%
-
   .image
-    height: 189px
+    height: 100%
     background-color: #ccc
     border-radius: 4px
     cursor: pointer
@@ -277,6 +289,7 @@ h2
       margin: auto
       overflow: hidden
       height: 100%
+      width: 100%
 
     svg image
       max-width: 100%
@@ -290,7 +303,6 @@ h2
   
   .quote-wrapper
     display: flex
-    padding: 7%
     grid-column-gap: 14%
 
   .quote-wrapper .quote-content
@@ -311,12 +323,15 @@ h2
 footer
   position: relative
   background-color: #ccc
-  padding: 37px
   display: flex
-  padding-bottom: 131px
   grid-column-gap: 21px
   background-image: url(/static/image/footer-bg.png)
   background-repeat: repeat-x
+  width: 100%
+
+  .content
+    display: flex
+    flex-wrap: wrap
 
   #contacts svg
     fill: #fff
@@ -353,14 +368,23 @@ footer
     text-align: left
     width: 21%
     margin: auto
+    display: flex
+    margin-bottom: 19px
+
+  li div
+    margin-right: 19px
 
   a 
     text-decoration: none
     color: #fff
     font-size: 14px
+    margin: auto
 
   h4
     color: #fff
+
+  svg
+    width: 39px
 
 #contacts
   padding: 14px
@@ -381,3 +405,89 @@ footer
     padding-top: 3px
     margin-right: 7px
 
+
+@media (max-width: 1280px)
+
+
+@media (max-width: 800px)
+  #demo
+    grid-auto-rows: 111px
+    grid-auto-columns: 181px
+    grid-template-columns: 1fr 1fr 1fr
+
+  #demo .name
+    font-size: 10px
+    padding-top: 14px
+
+  footer,#contacts,#fourth .quote-wrapper
+    flex-wrap: wrap
+
+  footer #map
+    width: 100%
+
+  h2
+    font-size: 15px
+
+  h3
+    font-size: 15px
+    margin-top: 49px
+
+  #second
+    grid-template-columns: 1fr 1fr
+
+  #second .block .text
+    font-size: 11px
+
+  #second .image svg
+    width: 47px
+    height: 47px
+
+  #info
+    width: 71%
+    margin: 0 0 0 auto
+    padding-right: 13px
+
+  #info > div
+    font-size: 15px
+    padding-bottom: 41px
+    line-height: 22px
+
+  #color-bars
+    left: -80px
+
+  #third h2
+    padding: 0 12px
+
+  #fourth .quote.quote-content
+    margin: 31px 0
+
+  #fourth .image.quote-content
+    width: 60%
+
+  #fourth .quote-wrapper .quote-content
+    flex: unset
+
+  #fourth .quote-separator
+    display: none
+
+  footer
+    padding: 9px
+    padding-bottom: 139px
+    height: 100vh
+
+    #footer-logo
+      width: 49px
+      height: 49px
+
+    #contacts span
+      font-size: 11px
+
+    #contacts a 
+      font-size: 11px
+
+@media (max-width: 500px)
+  #demo
+    grid-template-columns: 1fr 1fr
+
+  #second .block
+    padding: 0px 25px

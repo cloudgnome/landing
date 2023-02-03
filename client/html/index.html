@@ -7,217 +7,256 @@
         <title>Miracles Digital</title>
         <link rel="stylesheet" href="{%static 'css/index.css'%}">
         <link rel="icon" href="/static/image/favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
     </head>
     <body>
         {%include 'language.html'%}
-        <div id="nav"></div>
-        <div id="header">
-            <h1>Miracles Digital</h1>
-            <div id="slogan">
-                {% trans 'Я вірю в дива, я вірю в тебе.'%}
-            </div>
-            <div id="gears">
-                {% include 'gears.svg'%}
-            </div>
-        </div>
-        <div id="main">
-            <div id="color-bars">
-                <div class="bar 1"></div>
-                <div class="bar 2"></div>
-                <div class="bar 3"></div>
-                <div class="bar 4"></div>
-                <div class="bar 5"></div>
-                <div class="bar 6"></div>
-                <div class="bar 7"></div>
-                <div class="bar 8"></div>
-                <div class="bar 9"></div>
-            </div>
-            <h2>
-                {% trans 'Ти на цьому сайті, тому що'%}:
-            </h2>
-            <div id="info">
-                <div><span class="1">1</span> {% trans 'Тобі потрібно сконструювати #Django додаток, або #website'%}</div>
-                <div><span class="2">2</span> {% trans 'Потрібен #Python додаток або програма'%}</div>
-                <div><span class="3">3</span> {% trans '#HTML #CSS #JS front-end'%}</div>
-                <div><span class="4">4</span> {% trans 'SEO-оптимізація та покращення роботи вашого сайту.'%}</div>
-                <button>{% blocktranslate %} Зворотній зв'язок {% endblocktranslate %}</button>
-            </div>
-        </div>
-        <div id="third">
-            <h2>{% trans 'Розробка сайтів, додатків та мікросервісів різної складності'%}:</h2>
-            <div id="demo">
-                <div class="block">
-                    <div class="image">
-                        {% include 'demos/app_store.svg'%}
-                    </div>
-                    <div class="name">
-                        {% trans 'AppStore IOS application'%}
-                    </div>
+        <div class="container" id="main-scroll-box">
+            <div id="nav"></div>
+            <div id="header" class="scroll-box">
+                <h1>Miracles Digital</h1>
+                <div id="slogan">
+                    {% trans 'Я вірю в дива, я вірю в тебе.'%}
                 </div>
-                <div class="block">
-                    <div class="image">
-                        {% include 'demos/orders.svg'%}
-                    </div>
-                    <div class="name">
-                        {% trans 'Managers panel to work with orders and customers'%}
-                    </div>
-                </div>
-                <div class="block">
-                    <div class="image">
-                        {% include 'demos/tuvi-company.svg'%}
-                    </div>
-                    <div class="name">
-                        {% trans 'Charts and statistics'%}
-                    </div>
-                </div>
-                <div class="block">
-                    <div class="image">
-                        {% include 'demos/product.svg'%}
-                    </div>
-                    <div class="name">
-                        {% trans 'Mobile-friendly product view'%}
-                    </div>
-                </div>
-                <div class="block">
-                    <div class="image">
-                        {% include 'demos/admin.svg'%}
-                    </div>
-                    <div class="name">
-                        {% trans 'Customable REST admin-panel'%}
-                    </div>
-                </div>
-                <div class="block">
-                    <div class="image">
-                        {% include 'demos/table.svg'%}
-                    </div>
-                    <div class="name">
-                        {% trans 'CMS-system'%}
-                    </div>
-                </div>
-                <div class="block">
-                    <div class="image">
-                        {% include 'demos/social.svg'%}
-                    </div>
-                    <div class="name">
-                        {% trans 'Social network'%}
-                    </div>
-                </div>
-                <div class="block">
-                    <div class="image">
-                        {% include 'demos/landing.svg'%}
-                    </div>
-                    <div class="name">
-                        {% trans 'Landing page'%}
-                    </div>
+                <div id="gears">
+                    {% include 'gears.svg'%}
                 </div>
             </div>
-        </div>
-        <div id="second">
-            <div class="block 1">
-                <h3>{% blocktranslate %}Чому{% endblocktranslate %} Python?</h3>
-                <div class="image">
-                    {% include 'python.svg'%}
-                </div>
-                <div class="text">
-                    {% blocktranslate %}Швидка та розвиваюча мова програмування, з читабельним синтаксисом
-                    та розкритим Об'єктно Орієнтованним Програмуванням.{% endblocktranslate %}.
-                </div>
-            </div>
-            <div class="block 2">
-                <h3>Web, internet</h3>
-                <div class="image">
-                    {% include 'http.svg'%}
-                </div>
-                <div class="text">
-                    {% blocktranslate %}#HTML,#CSS,#JS мови програмування інтерфейсу та досвіду користувача.
-                    Новітня технологія #WASM #RUST анонсовано проживе наступні 40 років розвитку комп'ютерних технологій{% endblocktranslate %}.
-                </div>
-            </div>
-            <div class="block 3">
-                <h3>Blockchain future</h3>
-                <div class="image">
-                    {% include 'blockchain.svg'%}
-                </div>
-                <div class="text">
-                    {% blocktranslate %}Наступний крок в еволюції баз даних. Зберігайте свої данні, гроші максимально безпечно.
-                    Web3.0 який реалізує незалежні та прозорі данні.{% endblocktranslate %}.
+            <div id="main" class="scroll-box">
+                <div id="color-bars">
+                    <div class="bar 1"></div>
+                    <div class="bar 2"></div>
+                    <div class="bar 3"></div>
+                    <div class="bar 4"></div>
+                    <div class="bar 5"></div>
+                    <div class="bar 6"></div>
+                    <div class="bar 7"></div>
+                    <div class="bar 8"></div>
+                    <div class="bar 9"></div>
+                </div>  
+                <div class="content">
+                    <h2>
+                        {% trans 'Ти на цьому сайті, тому що'%}:
+                    </h2>
+                    <div id="info">
+                        <div><span class="1">1</span> {% trans 'Тобі потрібно сконструювати #Django додаток, або #website'%}</div>
+                        <div><span class="2">2</span> {% trans 'Потрібен #Python додаток або програма'%}</div>
+                        <div><span class="3">3</span> {% trans '#HTML #CSS #JS front-end'%}</div>
+                        <div><span class="4">4</span> {% trans 'SEO-оптимізація та покращення роботи вашого сайту.'%}</div>
+                    </div>
+                    <button>{% blocktranslate %} Зворотній зв'язок {% endblocktranslate %}</button>
                 </div>
             </div>
-            <div class="block 4">
-                <h3>SEO</h3>
-                <div class="image">
-                    {% include 'seo.svg'%}
-                </div>
-                <div class="text">
-                    {% trans 'Релевантна інформація в пошукових мережах для вашого бізнесу'%}.
-                </div>
-            </div>
-        </div>
-        <div id="fourth">
-            <div class="quote-wrapper">
-                <div class="image quote-content">
-                    <img src="{% static 'image/Lebn.webp' %}" alt="">
-                </div>
-                <div class="quote-separator"></div>
-                <div class="quote quote-content">
-                    <span>„Якщо б геометрія так само протилежила нашим пристростям та інтересам, як моральність, ми б так само сперечались проти неї і порушували ЇЇ всупереч усим доказам.“
-                    <br><br>
-                    Готфрід Лейбніц</span>
-                </div>
-            </div>
-            <div class="quote-wrapper">
-                <div class="quote quote-content">
-                    <span>„Якщо двері сприйняття очистити, усе постане перед людиною яким воно є - безмірним.“
-                    <br><br>
-                    Віліам Блейк</span>
-                </div>
-                <div class="quote-separator"></div>
-                <div class="image quote-content">
-                    <img src="{% static 'image/william-blake.webp' %}" alt="">
-                </div>
-            </div>
-        </div>
-        <footer>
-            <div id="contacts">
-                <div id="footer-logo">
-                    <img src="/static/image/footer-logo.png" alt="Miracles-logo">
-                </div>
-                <div id="footer-contacts">
-                    <div>
-                        <div>
-                            <div class="image">
-                                <svg><image width="12" height="12" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9IiM5NzliYTIiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiI+PHBhdGggZD0iTTUwMi4zIDE5MC44YzMuOS0zLjEgOS43LS4yIDkuNyA0LjdWNDAwYzAgMjYuNS0yMS41IDQ4LTQ4IDQ4SDQ4Yy0yNi41IDAtNDgtMjEuNS00OC00OFYxOTUuNmMwLTUgNS43LTcuOCA5LjctNC43IDIyLjQgMTcuNCA1Mi4xIDM5LjUgMTU0LjEgMTEzLjYgMjEuMSAxNS40IDU2LjcgNDcuOCA5Mi4yIDQ3LjYgMzUuNy4zIDcyLTMyLjggOTIuMy00Ny42IDEwMi03NC4xIDEzMS42LTk2LjMgMTU0LTExMy43ek0yNTYgMzIwYzIzLjIuNCA1Ni42LTI5LjIgNzMuNC00MS40IDEzMi43LTk2LjMgMTQyLjgtMTA0LjcgMTczLjQtMTI4LjcgNS44LTQuNSA5LjItMTEuNSA5LjItMTguOXYtMTljMC0yNi41LTIxLjUtNDgtNDgtNDhINDhDMjEuNSA2NCAwIDg1LjUgMCAxMTJ2MTljMCA3LjQgMy40IDE0LjMgOS4yIDE4LjkgMzAuNiAyMy45IDQwLjcgMzIuNCAxNzMuNCAxMjguNyAxNi44IDEyLjIgNTAuMiA0MS44IDczLjQgNDEuNHoiPjwvcGF0aD48L3N2Zz4=" image-rendering="optimizeSpeed"></image></svg>
-                            </div>
-                            <span>
-                                <a href="mailto:ivan.petrov.digital@gmail.com">ivan.petrov.digital@gmail.com</a>
-                            </span>
+            <div id="third" class="scroll-box">
+                <h2>{% trans 'Розробка сайтів, додатків та мікросервісів різної складності'%}:</h2>
+                <div id="demo">
+                    <div class="block">
+                        <div class="image">
+                            {% include 'demos/app_store.svg'%}
                         </div>
-                        <div>
-                            <div class="image">
-                                <svg><image width="12" height="12" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9IiM5NzliYTIiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiI+PHBhdGggZD0iTTQ5My40IDI0LjZsLTEwNC0yNGMtMTEuMy0yLjYtMjIuOSAzLjMtMjcuNSAxMy45bC00OCAxMTJjLTQuMiA5LjgtMS40IDIxLjMgNi45IDI4bDYwLjYgNDkuNmMtMzYgNzYuNy05OC45IDE0MC41LTE3Ny4yIDE3Ny4ybC00OS42LTYwLjZjLTYuOC04LjMtMTguMi0xMS4xLTI4LTYuOWwtMTEyIDQ4QzMuOSAzNjYuNS0yIDM3OC4xLjYgMzg5LjRsMjQgMTA0QzI3LjEgNTA0LjIgMzYuNyA1MTIgNDggNTEyYzI1Ni4xIDAgNDY0LTIwNy41IDQ2NC00NjQgMC0xMS4yLTcuNy0yMC45LTE4LjYtMjMuNHoiPjwvcGF0aD48L3N2Zz4=" image-rendering="optimizeSpeed"></image></svg>
-                            </div>
-                            <span>0629102731</span>
+                        <div class="name">
+                            {% trans 'Android Kotlin application'%}
                         </div>
                     </div>
-                    <div>
-                        <div>
-                            <div class="image">
-                                <svg><image width="12" height="12" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9IiM5NzliYTIiIHZpZXdCb3g9IjAgMCAzODQgNTEyIiB3aWR0aD0iMzg0IiBoZWlnaHQ9IjUxMiI+PHBhdGggZD0iTTE3Mi4yNjggNTAxLjY3QzI2Ljk3IDI5MS4wMzEgMCAyNjkuNDEzIDAgMTkyIDAgODUuOTYxIDg1Ljk2MSAwIDE5MiAwczE5MiA4NS45NjEgMTkyIDE5MmMwIDc3LjQxMy0yNi45NyA5OS4wMzEtMTcyLjI2OCAzMDkuNjctOS41MzUgMTMuNzc0LTI5LjkzIDEzLjc3My0zOS40NjQgMHpNMTkyIDI3MmM0NC4xODMgMCA4MC0zNS44MTcgODAtODBzLTM1LjgxNy04MC04MC04MC04MCAzNS44MTctODAgODAgMzUuODE3IDgwIDgwIDgweiI+PC9wYXRoPjwvc3ZnPg==" image-rendering="optimizeSpeed"></image></svg>
-                            </div>
-                            <span>Netherlands 6917 AB Gerderland</span>
+                    <div class="block">
+                        <div class="image">
+                            {% include 'demos/orders.svg'%}
+                        </div>
+                        <div class="name">
+                            {% trans 'Managers panel to work with orders and customers'%}
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="image">
+                            {% include 'demos/tuvi-company.svg'%}
+                        </div>
+                        <div class="name">
+                            {% trans 'Charts and statistics'%}
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="image">
+                            {% include 'demos/product.svg'%}
+                        </div>
+                        <div class="name">
+                            {% trans 'Mobile-friendly product view'%}
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="image">
+                            {% include 'demos/admin.svg'%}
+                        </div>
+                        <div class="name">
+                            {% trans 'Customable REST admin-panel'%}
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="image">
+                            {% include 'demos/table.svg'%}
+                        </div>
+                        <div class="name">
+                            {% trans 'CMS-system'%}
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="image">
+                            {% include 'demos/social.svg'%}
+                        </div>
+                        <div class="name">
+                            {% trans 'Social network'%}
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="image">
+                            {% include 'demos/landing.svg'%}
+                        </div>
+                        <div class="name">
+                            {% trans 'Landing page'%}
                         </div>
                     </div>
                 </div>
             </div>
-            <div id="map">
+            <div id="second" class="scroll-box">
+                <div class="block 1">
+                    <h3>{% blocktranslate %}Чому{% endblocktranslate %} Python?</h3>
+                    <div class="image">
+                        {% include 'python.svg'%}
+                    </div>
+                    <div class="text">
+                        {% blocktranslate %}Швидка та розвиваюча мова програмування, з читабельним синтаксисом
+                        та розкритим Об'єктно Орієнтованним Програмуванням.{% endblocktranslate %}.
+                    </div>
+                </div>
+                <div class="block 2">
+                    <h3>Web, internet</h3>
+                    <div class="image">
+                        {% include 'http.svg'%}
+                    </div>
+                    <div class="text">
+                        {% blocktranslate %}#HTML,#CSS,#JS мови програмування інтерфейсу та досвіду користувача.
+                        Новітня технологія #WASM #RUST анонсовано проживе наступні 40 років розвитку комп'ютерних технологій{% endblocktranslate %}.
+                    </div>
+                </div>
+                <div class="block 3">
+                    <h3>Blockchain future</h3>
+                    <div class="image">
+                        {% include 'blockchain.svg'%}
+                    </div>
+                    <div class="text">
+                        {% blocktranslate %}Наступний крок в еволюції баз даних. Зберігайте свої данні, гроші максимально безпечно.
+                        Web3.0 який реалізує незалежні та прозорі данні.{% endblocktranslate %}.
+                    </div>
+                </div>
+                <div class="block 4">
+                    <h3>SEO</h3>
+                    <div class="image">
+                        {% include 'seo.svg'%}
+                    </div>
+                    <div class="text">
+                        {% trans 'Релевантна інформація в пошукових мережах для вашого бізнесу'%}.
+                    </div>
+                </div>
             </div>
-            <div id="list">
-                <h4>Links:</h4>
-                <ul>
-                    <li><a href="github.com">GitHub</a></li>
-                    <li><a href="linkedin.com">Linkedin</a></li>
-                </ul>
+            <div id="fourth">
+                <div class="scroll-box">
+                    <div class="content">
+                        <div class="quote-wrapper">
+                            <div class="image quote-content">
+                                <img src="{% static 'image/Lebn.webp' %}" alt="">
+                            </div>
+                            <div class="quote-separator"></div>
+                            <div class="quote quote-content">
+                                <span>{% trans "«Негідно хорошим людям витрачати години, як раби, у праці розрахунків, яку можна було б покласти на когось іншого, якби використовувалися машини. <br> <br> (Описуючи в 1685 році цінність ручної обчислювальної машини для астрономів, яку він винайшов у 1673 році.)»"%}
+                                <br><br>
+                                {% trans 'Готфрід Лейбніц'%}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="scroll-box">
+                    <div class="content">
+                        <div class="quote-wrapper">
+                            <div class="quote quote-content">
+                                <span>{% trans '„Якщо двері сприйняття очистити, усе постане перед людиною яким воно є - безмірним.“'%}
+                                <br><br>
+                                {% trans 'Віліам Блейк'%}</span>
+                            </div>
+                            <div class="quote-separator"></div>
+                            <div class="image quote-content">
+                                <img src="{% static 'image/william-blake.webp' %}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </footer>
+            <div class="scroll-box">
+                <footer>
+                    <div class="content">
+                        <div id="contacts">
+                            <div id="footer-logo">
+                                <img src="/static/image/footer-logo.png" alt="Miracles-logo">
+                            </div>
+                            <div id="footer-contacts">
+                                <div>
+                                    <div>
+                                        <div class="image">
+                                            <svg><image width="12" height="12" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9IiM5NzliYTIiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiI+PHBhdGggZD0iTTUwMi4zIDE5MC44YzMuOS0zLjEgOS43LS4yIDkuNyA0LjdWNDAwYzAgMjYuNS0yMS41IDQ4LTQ4IDQ4SDQ4Yy0yNi41IDAtNDgtMjEuNS00OC00OFYxOTUuNmMwLTUgNS43LTcuOCA5LjctNC43IDIyLjQgMTcuNCA1Mi4xIDM5LjUgMTU0LjEgMTEzLjYgMjEuMSAxNS40IDU2LjcgNDcuOCA5Mi4yIDQ3LjYgMzUuNy4zIDcyLTMyLjggOTIuMy00Ny42IDEwMi03NC4xIDEzMS42LTk2LjMgMTU0LTExMy43ek0yNTYgMzIwYzIzLjIuNCA1Ni42LTI5LjIgNzMuNC00MS40IDEzMi43LTk2LjMgMTQyLjgtMTA0LjcgMTczLjQtMTI4LjcgNS44LTQuNSA5LjItMTEuNSA5LjItMTguOXYtMTljMC0yNi41LTIxLjUtNDgtNDgtNDhINDhDMjEuNSA2NCAwIDg1LjUgMCAxMTJ2MTljMCA3LjQgMy40IDE0LjMgOS4yIDE4LjkgMzAuNiAyMy45IDQwLjcgMzIuNCAxNzMuNCAxMjguNyAxNi44IDEyLjIgNTAuMiA0MS44IDczLjQgNDEuNHoiPjwvcGF0aD48L3N2Zz4=" image-rendering="optimizeSpeed"></image></svg>
+                                        </div>
+                                        <span>
+                                            <a href="mailto:ivan.petrov.digital@gmail.com">ivan.petrov.digital@gmail.com</a>
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <div class="image">
+                                            <svg><image width="12" height="12" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9IiM5NzliYTIiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiI+PHBhdGggZD0iTTQ5My40IDI0LjZsLTEwNC0yNGMtMTEuMy0yLjYtMjIuOSAzLjMtMjcuNSAxMy45bC00OCAxMTJjLTQuMiA5LjgtMS40IDIxLjMgNi45IDI4bDYwLjYgNDkuNmMtMzYgNzYuNy05OC45IDE0MC41LTE3Ny4yIDE3Ny4ybC00OS42LTYwLjZjLTYuOC04LjMtMTguMi0xMS4xLTI4LTYuOWwtMTEyIDQ4QzMuOSAzNjYuNS0yIDM3OC4xLjYgMzg5LjRsMjQgMTA0QzI3LjEgNTA0LjIgMzYuNyA1MTIgNDggNTEyYzI1Ni4xIDAgNDY0LTIwNy41IDQ2NC00NjQgMC0xMS4yLTcuNy0yMC45LTE4LjYtMjMuNHoiPjwvcGF0aD48L3N2Zz4=" image-rendering="optimizeSpeed"></image></svg>
+                                        </div>
+                                        <span>0629102731</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <div class="image">
+                                            <svg><image width="12" height="12" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9IiM5NzliYTIiIHZpZXdCb3g9IjAgMCAzODQgNTEyIiB3aWR0aD0iMzg0IiBoZWlnaHQ9IjUxMiI+PHBhdGggZD0iTTE3Mi4yNjggNTAxLjY3QzI2Ljk3IDI5MS4wMzEgMCAyNjkuNDEzIDAgMTkyIDAgODUuOTYxIDg1Ljk2MSAwIDE5MiAwczE5MiA4NS45NjEgMTkyIDE5MmMwIDc3LjQxMy0yNi45NyA5OS4wMzEtMTcyLjI2OCAzMDkuNjctOS41MzUgMTMuNzc0LTI5LjkzIDEzLjc3My0zOS40NjQgMHpNMTkyIDI3MmM0NC4xODMgMCA4MC0zNS44MTcgODAtODBzLTM1LjgxNy04MC04MC04MC04MCAzNS44MTctODAgODAgMzUuODE3IDgwIDgwIDgweiI+PC9wYXRoPjwvc3ZnPg==" image-rendering="optimizeSpeed"></image></svg>
+                                        </div>
+                                        <span>Netherlands 6917 AB Gerderland</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="map">
+                        </div>
+                        <div id="list">
+                            <h4>Links:</h4>
+                            <ul>
+                                <li>
+                                    <div>
+                                        <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8C0 11.54 2.29 14.53 5.47 15.59C5.87 15.66 6.02 15.42 6.02 15.21C6.02 15.02 6.01 14.39 6.01 13.72C4 14.09 3.48 13.23 3.32 12.78C3.23 12.55 2.84 11.84 2.5 11.65C2.22 11.5 1.82 11.13 2.49 11.12C3.12 11.11 3.57 11.7 3.72 11.94C4.44 13.15 5.59 12.81 6.05 12.6C6.12 12.08 6.33 11.73 6.56 11.53C4.78 11.33 2.92 10.64 2.92 7.58C2.92 6.71 3.23 5.99 3.74 5.43C3.66 5.23 3.38 4.41 3.82 3.31C3.82 3.31 4.49 3.1 6.02 4.13C6.66 3.95 7.34 3.86 8.02 3.86C8.7 3.86 9.38 3.95 10.02 4.13C11.55 3.09 12.22 3.31 12.22 3.31C12.66 4.41 12.38 5.23 12.3 5.43C12.81 5.99 13.12 6.7 13.12 7.58C13.12 10.65 11.25 11.33 9.47 11.53C9.76 11.78 10.01 12.26 10.01 13.01C10.01 14.08 10 14.94 10 15.21C10 15.42 10.15 15.67 10.55 15.59C13.71 14.53 16 11.53 16 8C16 3.58 12.42 0 8 0Z" transform="scale(64)" fill="#1B1F23"/>
+                                        </svg>
+                                    </div>
+                                    <a href="github.com">GitHub</a>
+                                </li>
+                                <li>
+                                    <div>
+                                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                                                 viewBox="0 0 291.319 291.319" xml:space="preserve">
+                                            <g>
+                                                <path style="fill:#0E76A8;" d="M145.659,0c80.45,0,145.66,65.219,145.66,145.66s-65.21,145.659-145.66,145.659S0,226.1,0,145.66
+                                                    S65.21,0,145.659,0z"/>
+                                                <path style="fill:#FFFFFF;" d="M82.079,200.136h27.275v-90.91H82.079V200.136z M188.338,106.077
+                                                    c-13.237,0-25.081,4.834-33.483,15.504v-12.654H127.48v91.21h27.375v-49.324c0-10.424,9.55-20.593,21.512-20.593
+                                                    s14.912,10.169,14.912,20.338v49.57h27.275v-51.6C218.553,112.686,201.584,106.077,188.338,106.077z M95.589,100.141
+                                                    c7.538,0,13.656-6.118,13.656-13.656S103.127,72.83,95.589,72.83s-13.656,6.118-13.656,13.656S88.051,100.141,95.589,100.141z"/>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <a href="linkedin.com">Linkedin</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
     </body>
 </html>
