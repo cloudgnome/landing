@@ -455,6 +455,9 @@ footer {
     grid-template-columns: 1fr 1fr;
     padding-top: 0; }
 
+  #second {
+    grid-auto-rows: 1fr; }
+
   #second .block {
     padding: 0px 25px; } }
 
