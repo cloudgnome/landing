@@ -21,3 +21,48 @@ urlpatterns = [
     path('cv/', include('cv.urls')),
     path('',include('index.urls'))
 ]
+# -*- coding=utf-8 -*-
+from django.conf.urls import include, url
+from django.contrib import admin
+from catalog import views as catalog
+from shop.views.sitemaps import sitemap
+from shop.views import RobotsView,ConfirmView
+from django.views.generic import RedirectView
+from django.urls import include, path, re_path
+from catalog import views as catalog
+from blog import views as blog
+from shop.views import maintenance,HomeView,GuestbookView,category
+
+urlpatterns = [
+    re_path(r'^redactor/', include('redactor.urls')),
+    re_path(r'^favicon\.ico$', RedirectView.as_view(url='/static/image/favicon.webp')),
+    re_path(r'^sitemap\.xml$', sitemap, name='sitemapxml'),
+    re_path(r'^robots\.txt$', RobotsView.as_view(), name='robots'),
+    re_path(r'^\.well-known/pki-validation/(?P<name>\w+\.txt)$', ConfirmView.as_view()),
+    re_path(r'^(?P<lang>[a-z]{2})/', include('shop.urls')),
+    re_path(r'^user/', include('user.urls')),
+    re_path(r'^(?P<lang>[a-z]{2})/user/', include('user.urls')),
+    re_path(r'^(?P<lang>[a-z]{2})/category',category),
+    re_path(r'^(?P<lang>[a-z]{2})/cart/', include('cart.urls')),
+    re_path(r'^(?P<lang>[a-z]{2})/checkout/', include('checkout.urls')),
+    re_path(r'^(?P<lang>[a-z]{2})/catalog/',include('catalog.urls')),
+    re_path(r'^(?P<lang>[a-z]{2})/search', catalog.search, name='search'),
+    re_path(r'^cart/', include('cart.urls')),
+    re_path(r'^checkout/', include('checkout.urls')),
+    re_path(r'^', include('shop.urls')),
+    re_path(r'^maintenance\.html',maintenance),
+    re_path(r'^search', catalog.search, name='search'),
+    re_path(r'^leave_review', GuestbookView.as_view()),
+    re_path(r'^category',category)
+]
+
+from shop.views import error404,error500
+
+handler404 = error404
+handler500 = error500
+
+urlpatterns.append(url(r'^(?P<lang>[a-z]{2})/(?P<slug>.*)', catalog.resolve ,name='catalog'))
+urlpatterns.append(url(r'^(?P<slug>.*)', catalog.resolve ,name='catalog'))
+
+
+urlpatterns.append(url(r'^$', include('shop.urls')))

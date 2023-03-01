@@ -142,6 +142,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
 STATIC_URL = 'static/'
+STATIC_ROOT = CACHE_URL / 'cache/html/{device}/{lang}/static/'
 STATICFILES_DIRS = [HOME_DIR / 'client/']
 
 # Default primary key field type

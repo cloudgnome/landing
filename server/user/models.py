@@ -38,7 +38,7 @@ class User(models.Model):
     subscription = models.BooleanField(verbose_name=_('Підписати пошту'),default=True)
     last_login = models.DateTimeField(auto_now_add=True,verbose_name=_("Востаннє в мережі"),null=True)
     created_at = models.DateTimeField(auto_now_add=True,verbose_name=_("Дата реєстрації"),null=True)
-    device_token = models.CharField(max_length=50,unique=True,null=True)
+    device_id = models.CharField(max_length=50,unique=True,null=True)
     notifications = models.BooleanField(default=1)
     fcm_token = models.CharField(max_length=255,null=True)
     update_departaments = models.BooleanField(default=False)
